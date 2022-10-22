@@ -11,6 +11,8 @@
 		B7C8BE0528FE0F2300E891FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C8BE0428FE0F2300E891FE /* ContentView.swift */; };
 		B7C8BE0728FE0F2500E891FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7C8BE0628FE0F2500E891FE /* Assets.xcassets */; };
 		B7C8BE0A28FE0F2500E891FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7C8BE0928FE0F2500E891FE /* Preview Assets.xcassets */; };
+		B7C8BE1229008C0D00E891FE /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B7C8BE1129008C0D00E891FE /* ConfettiSwiftUI */; };
+		B7C8BE1529008C6B00E891FE /* Popovers in Frameworks */ = {isa = PBXBuildFile; productRef = B7C8BE1429008C6B00E891FE /* Popovers */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7C8BE1529008C6B00E891FE /* Popovers in Frameworks */,
+				B7C8BE1229008C0D00E891FE /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = "Unit Converter";
+			packageProductDependencies = (
+				B7C8BE1129008C0D00E891FE /* ConfettiSwiftUI */,
+				B7C8BE1429008C6B00E891FE /* Popovers */,
+			);
 			productName = "Unit Converter";
 			productReference = B7C8BDFF28FE0F2300E891FE /* Unit Converter.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = B7C8BDF628FE0F2300E891FE;
+			packageReferences = (
+				B7C8BE1029008C0D00E891FE /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				B7C8BE1329008C6B00E891FE /* XCRemoteSwiftPackageReference "Popovers" */,
+			);
 			productRefGroup = B7C8BE0028FE0F2300E891FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +349,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7C8BE1029008C0D00E891FE /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B7C8BE1329008C6B00E891FE /* XCRemoteSwiftPackageReference "Popovers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aheze/Popovers";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7C8BE1129008C0D00E891FE /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7C8BE1029008C0D00E891FE /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+		B7C8BE1429008C6B00E891FE /* Popovers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7C8BE1329008C6B00E891FE /* XCRemoteSwiftPackageReference "Popovers" */;
+			productName = Popovers;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7C8BDF728FE0F2300E891FE /* Project object */;
 }
